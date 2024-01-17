@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import url('https://fonts.cdnfonts.com/css/press-start-2p');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+@import url('https://fonts.cdnfonts.com/css/keania-one');
+
+*{margin: 0; padding: 0};
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.full{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+/* 메인토글 */
+.full .toggle{
+    width: 90px; height: 42px;
+    border-radius: 20px;
+    background: #FFDD3D;
+    position: absolute;
+    left: 38px; top: 38px;
+    display: block;
+
+
+}
+.full .toggle #web1{
+    width: 36px; height: 36px;
+    border-radius: 50px;
+    background: #fff;
+    position: absolute;
+    left: 6px; top: 2px;
+    cursor: pointer;
+}
+/* 클릭했을때 토글 바뀜 */
+/* .full .flip{
+  width: 90px; height: 42px;
+  border-radius: 20px;
+  background: black;
+  position: absolute;
+  left: 38px; top: 38px;
+  display: block;
+  cursor: pointer;
+
+}
+.full .flip{
+  width: 36px; height: 36px;
+  border-radius: 50px;
+  background: #fff;
+  position: absolute;
+  left: 50px; top: 2px;
+  cursor: pointer;
+} */
+.full h1{
+  font-family: 'Press Start 2P';
+  font-size: 55px;
+  color: #DE1717ff;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 70px;
+
+}
+.full .card{
+  width: 1500px; height: 700px;
+  background: #FFDD3D;
+  border-radius: 50px;
+/*   position: absolute;
+  top: 200px;  left: 50%;
+  transform: translate(-50%); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 20px solid rgb(238, 132, 39);
+}
+.full .card .web{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.full .card .web .web_box{
+  width: 350px; height: 460px;
+  background: #fff;
+  border-radius: 60px;
+  margin-top: 130px;
+}
+.full .card .web .web_box.green{
+  background: #008F17;
+}
+
+.full .card .web .web_box p{
+  font-family: 'Press Start 2P';
+  font-size: 130px;
+  color: #DE1717ff;
+  text-align: center;
+  line-height: 460px;
+}
+
+/* 웹 랜덤 */
+
+.full .card2{
+  width: 1500px; height: 700px;
+  background: #FFDD3D;
+  border-radius: 50px;
+/*   position: absolute;
+  top: 200px;  left: 50%;
+  transform: translate(-50%); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 20px solid rgb(238, 132, 39);
+  display: none;
+}
+.full .card2 .web{
+  width: 100%; height: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 130px;
+
+}
+.full .card2 .web .web_box{
+  width: 400px; height: 460px;
+  background: #fff;
+  border-radius: 60px;
+  margin-bottom: 60px;
+  overflow:hidden;
+  position: relative;
+/*   border: 20px solid #2a2828; */
+}
+
+.full .card2 .web .web_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.full .card2 .web .web_box .site_info{
+  width: 100%; height: 230px;
+  display: flex;
+  flex-direction: column;
+/*   justify-content: space-around; */
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  font-family: 'pretendard';
+  border-top: 1px solid #e8e8e8;
+  background: #000000aa;
+  z-index: 9999;
+  /* margin-top: 40px; */
+
+}
+.full .card2 .web .web_box .site_info h1{
+  width: 100%;
+  display: flex;
+  font-family: 'pretendard';
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  position: absolute;
+  left: 50%; bottom: 150px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.full .card2 .web .web_box .site_info a{
+  width: 100%;
+  font-family: 'pretendard';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  color: rgb(247, 255, 23);
+/*   position: absolute;
+  right: 60px; top: 50px; */
+}
+
+.full .card2 .web .web_box .site_info .skill{ 
+  width: 100%; height: 60px;
+/*   position: absolute;
+  right: 60px; bottom: 90px; */
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.full .card2 .web .web_box .site_info .skill p{
+  width: 59px; height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  background: #d30909;
+/*   border: 2px solid hsl(284, 42%, 64%); */
+  padding: 6px;
+  border-radius: 18px;
+}
+.full .card2 .web .web_box .site_info .skill:last-child p:nth-child(4){
+  width: 88px;
+}
+
+/* 레버 */
+.full .lv img{
+  position: absolute;
+  right: 60px; top: 250px;
+  cursor: pointer;
+}
+/* .full .lv img.on{
+  animation: lvAni 3s 2s forwards;
+} */
+.full .lv img:nth-child(1){
+  width: 55px; height: 580px;
+  position: absolute;
+  right: 72px; top: 230px;
+}
+.full .lv img:nth-child(1).on{
+  animation: lvAni 1s forwards ;
+  perspective-origin: bottom;
+}
+.full .lv img:nth-child(2){
+  width: 100px; height: 100px;
+  position: absolute;
+  right: 100px; top: 750px;
+}
+.full .lv img.bt{
+  width: 120px; height: 120px;
+  position: absolute;
+  right: 38px; top: 170px;
+  animation: sc 1s 2s infinite;
+}
+.full .lv img.bt.on{
+  animation: lvAni2 1s forwards;
+}
+/* .full .lv img.bt.on{
+  animation: lvAni 1s linear;
+} */
+@keyframes sc{
+  0%,100%{transform: scale(1);}
+  50%{transform: scale(1.07);}
+}
+@keyframes lvAni{
+  0%{}
+  50%{
+    transform: perspective(400px) rotateX(-80deg);
+    right: 85px; top: 510px;
+  }
+  100%{
+    transform: perspective(400px) rotateX(-100deg); 
+    right: 85px; top: 490px;
+  }
+}
+@keyframes lvAni2{
+  0%{transform: scale(1);}
+  50%{
+    transform: perspective(100px) rotateX(-20deg) scale(1.6);
+    right: 44px; top: 590px;
+  }
+  100%{
+    transform: perspective(400px) rotateX(-20deg) scale(2); 
+    right: 44px; top: 880px;
+  }
+}
