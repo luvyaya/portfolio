@@ -1,0 +1,8 @@
+<i class="fa-solid fa-magnifying-glass"></i>    <!-- 돋보기 -->
+<i class="fa-solid fa-angle-down"></i>          <!-- v  -->
+<i class="fa-sharp fa-light fa-arrow-down"></i> <!-- 다운 화살표 스크롤 -->
+<i class="fa-sharp fa-light fa-arrow-up"></i>   <!-- 업 화살표 스크롤 -->
+<i class="fa-light fa-arrow-left"></i>          <!-- <- 왼쪽 화살표 -->
+<i class="fa-light fa-thumbs-up fa-beat-fade"></i> <!-- 엄지 -->
+<i class="fa-regular fa-chevron-left"></i>      <!-- < -->
+<i class="fa-regular fa-chevron-right"></i>     <!-- > -->
