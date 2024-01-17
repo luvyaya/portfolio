@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="HamburgerTruck">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Hyejin Hwang">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/26f172ef8c.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  
+</head>
+
+<body>
+<div class="wrap">
+  <div class="first_pg">
+    <div class="line_box">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div><!-- //.line_box -->
+    <h1>HAMBURGER TRUCK</h1>
+    <img src="img/main_img.png" alt="첫 화면 이미지">
+  </div><!-- //.first_pg -->
+
+
+  <div class="second_pg">
+    <div class="second_t"></div><!-- //.second_t -->
+    <div class="second_bg">
+      <div class="street"></div><!-- //.street -->
+      <img class="bg1" src="img/bicycle.png" alt="">
+      <img class="bg2" src="img/building1.png" alt="">
+      <img class="bg3" src="img/building2.png" alt="">
+      <img class="bg4" src="img/building3.png" alt="">
+      <img class="bg6" src="img/back_p2.png" alt="">
+      <img class="bg7" src="img/dog.png" alt="">
+      <img class="bg8" src="img/car.png" alt="">
+      <img class="bg5" src="img/back_p.png" alt="">
+      <img class="bg9" src="img/cola.png" alt="">
+      <img class="bg10" src="img/m1.png" alt="">
+      <div class="orderTable"></div><!-- //.orderTable -->
+      <div class="order">
+          <h2>주문받기</h2>
+      </div><!-- //.order -->
+      <div class="menu">
+        <div class="menu_outline">
+          <h2>menu</h2>
+          <div class="burger">
+            <p>버거종류</p>
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>햄버거</p>
+            <p>7,500원</p>
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>치즈버거</p>
+            <p>8,000원</p>
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>해시브라운버거</p>
+            <p>8,900원</p>
+          </div><!-- //menu_txt -->
+          <div class="burger">
+            <p>음료</p>
+
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>-콜라</p>
+            <p>2,000원</p>
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>-사이다</p>
+            <p>2,000원</p>
+          </div><!-- //menu_txt -->
+          <div class="menu_txt">
+            <p>-환타</p>
+            <p>2,000원</p>
+          </div><!-- //menu_txt -->
+        </div><!-- //.menu_outline -->
+      </div><!-- //.menu -->
+
+    <!-- 계산 -->
+    <div class="payment_box">
+      <div class="payment_inner">
+        <div class="burger_pay">
+          <div class="burger_box hm">
+            <p>햄버거</p>
+          </div><!-- //.burger_box -->
+          <div class="burger_box ch">
+            <p>치즈버거</p>
+          </div><!-- //.burger_box -->
+          <div class="burger_box hh">
+            <p>해시브라운<br>햄버거</p>
+          </div><!-- //.burger_box -->
+        </div><!-- //burger_pay -->
+        <div class="drink_option">
+          <div class="drink_pay">
+            <div class="drink_box cola">
+              <p>콜라</p>
+            </div><!-- .drink_box -->
+            <div class="drink_box cider">
+              <p>사이다</p>
+            </div><!-- .drink_box -->
+            <div class="drink_box fanta">
+              <p>환타</p>
+            </div><!-- .drink_box -->
+          </div><!-- //.drink_pay -->
+          <div class="option_pay">
+            <div class="option_box addT">
+              <p>토핑 추가</p>
+            </div><!-- //.option_box -->
+            <div class="option_box_t minusT">
+              <p>토핑 빼기</p>
+            </div><!-- //.option_box -->
+          </div><!-- //.option_pay -->
+        </div>
+        
+        <div class="payment_monitor">
+          <div class="monitor_inner">
+            <div class="pay_txt">
+              <span></span>
+              <div class="quantity">
+                <button class="minus_box" onclick="minus()"><i class="fa-solid fa-minus fa-2x"></i></button>
+                <input type="text" name="amount" value="1" class="num" onclick="num">
+                <button class="plus_box" onclick="plus()"><i class="fa-solid fa-plus fa-2x"></i></button>
+                <p></p>
+              </div><!-- //.quantity -->
+            </div><!-- //.pay_txt -->
+            <div class="totalPrice_pay">
+              <div class="total_txt">
+                <p>총금액</p>
+                <p>8,000원</p>
+              </div><!-- //.total_txt -->
+            </div><!-- //.totalPrice_pay -->
+          </div><!-- //.monitor_inner -->
+          <div class="accept_order">
+            <h2>주문접수</h2>
+          </div><!-- .accept_order -->
+        </div><!-- //.payment_monitor -->
+
+      </div><!-- //.payment_inner -->
+    </div><!-- //.payment_box -->
+  </div><!-- //second_bg -->
+</div><!-- //.second_pg-->
+
+  <div class="order_pg" id="order_pg">
+      <div class="outline_box">
+        <div class="order_box">
+          <div class="order_container">
+            <div class="order_txt menu_t">
+              <p>치즈버거 2</p>
+              <div class="check_box">
+                <i class="fa-solid fa-check fa-3x"></i>
+              </div>
+            </div><!-- //.order_txt -->
+            <div class="order_txt">
+              <p>해시브라운버거</p>
+              <div class="check_box">
+                <i class="fa-solid fa-check fa-3x"></i>
+              </div>
+            </div><!-- .order_txt  -->
+            <div class="order_txt">
+              <p>콜라 2</p>
+              <div class="check_box">
+                <i class="fa-solid fa-check fa-3x"></i>
+              </div>
+            </div><!-- order_txt  -->
+            <div class="total_price">
+              <div class="total_txt">
+                <p>치즈버거 x 2</p>
+                <p> 8,000원</p>
+              </div><!-- //.total_txt -->
+              <div class="total_txt">
+                <p>해시브라운버거</p>
+                <p>8,900원</p>
+              </div><!-- //.total_txt -->
+              <div class="total_txt">
+                <p>콜라 x 2 </p>
+                <p>2,000원</p>
+              </div><!-- //.total_txt -->
+            </div><!-- //.total_price -->
+            <div class="total_final">
+              <p>TOTAL</p>
+              <p>28,900원</p>
+            </div><!-- //.total_final -->
+          </div><!-- //.order_container -->
+          <div class="boxx">
+            <h2>ORDER</h2>
+          </div>
+        </div><!-- //.order_box -->
+        <div class="making">
+          <div class="cook_bg">
+          </div><!-- //.cook_bg -->
+          <div class="cook">
+
+          </div><!-- //.cook -->
+        </div><!-- //.making -->
+
+        <div class="stuff">
+          <div class="order_rightTop">
+            <div class="rightTop_box">
+              <h2>다음주문</h2>
+            </div>
+            <div class="rightTop_box">
+              <h2>포장완료</h2>
+            </div>
+          </div><!-- //.order_rightTop -->
+          <div class="order_rightBottom">
+            <h2>재료를 선택해주세요</h2>
+            <div class="choose">
+              <img class="c1" src="img/mini_burgerTop.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c2" src="img/mini_sauce.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c3" src="img/mini_onion.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c4" src="img/mini_burgerBottom.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c5" src="img/mini_vegetable.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c6" src="img/mini_tomato.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c7" src="img/mini_cheese.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c8" src="img/mini_meat.png" alt="">
+            </div><!-- //.choose -->
+            <div class="choose">
+              <img class="c9" src="img/mini_potato.png" alt="">
+            </div><!-- //.choose -->
+          </div><!-- //.order_rightBottom -->
+        </div><!-- //.stuff -->
+      </div><!-- //.outline_box -->
+  </div><!-- //.order_pg -->
+</div>
+
+
+</body>
+
+</html>
