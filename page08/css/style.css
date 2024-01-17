@@ -1,0 +1,193 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol {list-style: none;}
+a {text-decoration: none;} 
+.inner {width: 1180px; margin: 0 auto;}
+
+/* header */
+header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+header .inner{
+    height: 120px;
+    position: relative;
+}
+header .inner h1{
+    position: absolute;
+    left: 0; bottom: 15px;
+
+}
+header .inner h1 a{
+    font: bold 24px/1 'arial';
+    color: #444;
+}
+header .inner nav{
+    position: absolute;
+    right: 0; bottom: 0;
+}
+header .inner nav ul#gnb{}
+header .inner nav ul#gnb li{
+    float: left;
+}
+header .inner nav ul#gnb li a{
+    display: block;
+    font: bold 15px/1 'arial';
+    color: #555;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+header .inner nav ul#gnb li a:hover{
+    background: #555;
+    color: #fff;
+}
+header .inner ul.util{
+    position: absolute;
+    right: 30px; top: 20px;
+}
+header .inner ul.util li{
+    float: left;
+}
+header .inner ul.util li a{
+    color: #999;
+    display: block;
+    font: 12px/1 'arial';
+    padding: 0 10px;
+}
+
+/* figure */
+figure{
+    width: 100%; 
+    height: calc(100vh - 121px);
+    background: #000;
+    padding-top: 250px;
+    position: relative;
+} 
+figure video{
+    position: absolute;
+    width: 100%; height: 100%;
+    opacity: 0.3;
+    left: 0; top: 0;
+    object-fit: cover;
+}
+figure .inner{
+    position: relative;
+}
+figure .inner h2{
+    font: normal 120px/1 'arial';
+    color: #fff;
+    margin-bottom: 20px;
+}
+figure .inner p{
+    font: 16px/1.4 'arial';
+    color: #888;
+    margin-bottom: 60px;
+
+}
+figure .inner a{
+    display: block;
+    width: 400px; height: 30px;
+    border: 1px solid #bbb;
+    text-align: center;
+    color: #fff;
+    font: bold 11px/30px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+figure .inner a:hover{
+    background: #fff;
+    color: #555;
+}
+
+/* section */
+section{
+    width: 100%;
+    padding: 200px 0;
+}
+section h2{
+    font: bold 24px/1 'arial';
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section .wrap{
+    width: 100%;
+}
+section .wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+section .wrap article{
+    width: 280px;
+    margin-right: 20px;
+    float: left;
+}
+section .wrap article:last-child{
+    margin-right: 0;
+}
+section .wrap article .pic{
+    width: 100%; height: 120px;
+}
+section .wrap article .pic img{    /* pic 프레임 안에 이미지를 꽉 채움 */
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+section .wrap article h3{
+    margin-bottom: 10px;
+}
+section .wrap article h3 a{
+    font: bold 16px/1 'arial';
+    color: #555;
+}
+section .wrap article p{
+    font: 14px/1.4 'arial';
+    color: #777;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 100px 0;
+    border-top: 1px solid #888;
+    background: #333;
+}
+footer .upper{
+    width: 100%;
+    border-bottom: 1px solid #777;
+    padding-bottom: 20px;
+
+}
+footer .upper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer .upper h1{
+    float: left;
+    font: bold 24px/1 'arial';
+    color: #666;
+}
+footer .upper ul{float: right;}
+footer .upper ul li{
+    float: left;
+    margin-left: 20px;
+}
+footer .upper ul li a{
+    font: bold 14px/1 'arial';
+    color: #666;
+}
+footer .lower{
+    width: 100%;
+    padding-top: 20PX;}
+footer .lower address{
+    width: 100%;
+    font: 12PX/1.3 'arial';
+    color: #777;
+    margin-bottom: 20px;
+}
+footer .lower p{
+    width: 100%;
+    font: 12px/1 'arial';
+    color: #777;
+}
