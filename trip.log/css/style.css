@@ -1,0 +1,346 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{
+    color: #000;
+    font-family: 'pretendard';
+}
+
+.wrapper{
+    width: 100vw;
+    position: relative;
+}
+header{
+    width: 100%; height: 119px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.contents{
+    width: 1270px;
+    margin: 0 auto;
+}
+header h2{
+    display: flex;
+    align-items: center;
+}
+header h2 a{display: block;}
+header h2 a img{
+   
+}
+header nav{
+    width: 408px;
+    display: flex;
+    margin-left: 350px;
+}
+header nav ul{
+    width: 100%; 
+    color: #000;
+    display: flex;
+}
+header nav ul li{
+    width: 20%;
+    font-weight: 600;
+    font-size: 16px;
+}
+header nav ul li a{
+    width: 100%; height: 30px;
+    display: block;
+    line-height: 30px;
+}
+header .search_box{
+    width: 198px; height: 30px;
+    display: flex;
+    align-items: center;
+    background: #d1d0d0;
+    border-radius: 5px;
+    border: 0;
+    color: #8b8b8b;
+    font-weight: 500;
+    font-size: 14px;
+}
+header .search_box i{
+    margin: 0 20px;
+}
+header p{
+    display: flex;
+    width: 80px; height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+main .banner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main .banner .ban_txt{
+    width: 352px; height: 200px;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+main .banner .ban_txt h4:first-child{
+    width: 215px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+    font-size: 18px;
+}
+main .banner .ban_txt h4:nth-child(2){
+    width: 100%;
+    font-weight: 700px;
+    font-size: 20px;
+}
+main .banner .ban_txt p{
+    margin: 10px;
+}
+main .banner .ban_txt p i{
+    margin-left: 15px;
+}
+section{
+    width: 100%; height: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section.contents h4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+section.contents h4 i{
+    line-height: 200px; 
+    margin-left: 15px;
+}
+section.contents .con1{
+    width: 100%; height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.contents .con1 .con1_img{
+    width: 295px; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    
+}
+section.contents .con1 .con1_img img{
+    width: 295px; height: 250px;
+}
+section.contents .con1 .con1_img .con1_txt{
+    width: 100%; height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.contents .con1_img .con1_txt p{
+    margin: 4px;
+}
+section.contents .con1_img .con1_txt p:first-child{
+    width: 42px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    font-weight: 700;
+    
+}
+section.contents .con1_img:nth-child(2) .con1_txt p:first-child{
+    width: 58px;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+}
+a.go{
+    width: 99px; height: 49px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    display: block;
+    line-height: 49px;
+}
+.con2{
+    width: 100%; height: 800px;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    text-align: center;
+}
+.con2 .contents h4{
+    width: 100%; height: 240px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 240px;
+}
+.con2 .contents h4 i{
+    line-height: 240px;
+    margin-left: 15px;
+}
+.con2 .contents .con2_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.con2 .contents .con2_box .c2_box{
+    display: flex; height: 272px;
+    flex-direction: column;
+}
+.con2 .contents .con2_box .c2_box img{
+    width: 100%;
+}
+.con2 .contents .con2_box .c2_box p{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    line-height: 43px;
+    margin: 0 auto;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.con2 .contents .con2_box .c2_box:nth-child(1) p{
+    width: 75px;
+}
+.con2 .contents a{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.con_banner{
+    width: 100%;
+    position: relative;
+}
+.con_banner img{
+    width: 100%;
+
+}
+.con_banner .con_ban_txt{
+    width: 490px; height: 300px;
+    position: absolute;
+    left: 110px; bottom: 120px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.con_banner .con_ban_txt h2{
+    font-size: 70px;
+}
+.con_banner .con_ban_txt h2 i{
+    margin-left: 30px;
+}
+.con_banner .con_ban_txt h3{
+    font-size: 40px;
+    font-weight: 300;
+}
+.con_banner .con_ban_txt p{
+    font-size: 35px;
+    font-weight: 600;
+}
+.con_banner .con_ban_txt p a{
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #000;
+    font-size: 25px;
+    padding: 5px 10px;
+    font-weight: 800;
+}
+.sale{
+    width: 100%; height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sale .contents h4{
+    width: 100%; height: 240px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 240px;
+}
+.sale .contents h4 i{
+    line-height: 240px;
+    margin-left: 15px;
+}
+.sale .contents .con3{
+    width: 100%; height: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sale .contents .con3 .con3_box{
+    width: 295px; height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sale .contents .con3 .con3_box img{
+    width: 100%; height: 258px;
+    position: absolute;
+    left: 0; top: 0;
+}
+.sale .contents .con3 .con3_box p{
+    width: 20%; height: 40px;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    left: 4px; top: 0;
+    background: rgba(0, 0, 0, 0.651);
+    line-height: 40px;
+    justify-content: center;
+
+}
+.sale .contents .con3 .con3_box:first-child p{
+    position: absolute;
+    left: 0; top: 0;
+}
+.sale .contents .con3 .con3_box a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 30px;
+    font-weight: 700;
+
+}
+.sale .contents .con3 .con3_box a>p{
+    width: 50%;
+    display: flex;
+    display: block;
+    color: #000;
+    background: 0;
+
+}
+.sale .contents .con3 .con3_box span{
+    margin-right: 0;
+    display: flex;
+    position: absolute;
+    bottom: 0; right: 0;
+}
